@@ -1,0 +1,61 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/concern/concern",
+    "pages/vip/vip",
+    "pages/free/free",
+    "pages/my/my",
+    "pages/tags/tags",
+    "pages/search/search",
+    "pages/morevideo/morevideo",
+    "pages/videodetail/videodetail",
+    "pages/concernmore/concernmore",
+    "pages/user/user",
+    "pages/changevip/changevip",
+    "pages/feedlist/feedlist",
+    "pages/feedback/feedback"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#FFD600",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/index_nav.png",
+        "selectedIconPath": "img/index_nav_active.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/concern/concern",
+        "iconPath": "img/concern_nav.png",
+        "selectedIconPath": "img/concern_nav_active.png",
+        "text": "关注"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "iconPath": "img/vip_nav.png",
+        "selectedIconPath": "img/vip_nav_active.png",
+        "text": "VIP专区"
+      },
+      {
+        "pagePath": "pages/free/free",
+        "iconPath": "img/free_nav.png",
+        "selectedIconPath": "img/free_nav_active.png",
+        "text": "福利"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "img/my_nav.png",
+        "selectedIconPath": "img/my_nav_active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+.topgray{
+  width: 100%;
+  height: 89rpx;
+  overflow: hidden;
+  /* margin-top: 60rpx; */
+}
+.topdis::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15rpx;
+  background: #f0f0f0;
+}
+.searchboxgray{
+  position: relative;
+  /* overflow: hidden; */
+  margin: 0 auto;
+  margin-top: 18rpx;
+  /* margin-bottom: 18rpx; */
+  width:710rpx;
+  height: 53rpx;
+  line-height: 53rpx;
+  background: #F0F0F0;
+  border: 1rpx solid #fff;
+  border-radius: 27rpx;
+  /* text-align: center; */
+}
+.searchboxgray .searchimggray{
+  margin-top: 5rpx;
+  width:30rpx;
+  height: 30rpx;
+  margin-left: 227rpx; 
+}
+.searchboxgray .searchimggray image{
+  display: inline-block;
+  width:100%;
+  height: 100%;
+}
+.searchtextgray{
+  position: absolute;
+  top:0;
+  left: 270rpx; 
+  font-size: 24rpx;
+  color: #999;
+}
+.recommend{
+  margin-top: 20rpx;
+}
+.typerecommend{
+  /* display: flex; */
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 21rpx;
+  /* border-bottom: 1rpx solid #e8e8e8; */
+}
+.typerecommend::after{
+  content: '';
+  display: block;
+  width: 710rpx;
+  height: 1rpx;
+  background: #e8e8e8;
+  margin: 0 auto;
+}
+.recommenditem{
+  /* flex: 1; */
+  /* padding: 10rpx 0; */
+  width: 160rpx;
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 50rpx;
+   /* border-bottom: 5rpx solid #ffd600;  */
+}
+.on:after{
+  content: '';
+  display: block;
+  width: 37rpx;
+  height: 5rpx;
+  background:#ffd600; 
+  margin: 0 auto;
+}
+.concernitem{
+  position: relative;
+  width: 710rpx;
+  height: 168rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  margin: 0 auto;
+}
+.concerndetail{
+  margin-left: 31rpx;
+}
+.concernimg{
+  display: inline-block;
+  width: 128rpx;
+  height: 128rpx;
+  transform: translateY(20rpx);
+  border-radius: 50%;
+}
+.concernimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.concerndetail{
+  display: inline-block;
+}
+.concerntitle{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.concernintro{
+  font-size: 22rpx;
+  color: #999;
+}
+.accountbox{
+  display: inline-block;
+  font-size: 0;
+  margin-bottom: 21rpx;
+}
+.accountbox:last-child{
+  margin-left: 36rpx;
+}
+.accountname{
+  display: inline-block;
+  font-size: 22rpx;
+  color: #999;
+}
+.accountnum{
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 22rpx;
+}
+.concernperson{
+  position: absolute;
+  display: inline-block;
+  width: 109rpx;
+  height: 52rpx;
+  top: 59rpx;
+  right: 20rpx;
+  line-height: 52rpx;
+  border-radius: 26rpx;
+  background: #ffd600;
+  color: #000;
+  font-weight: 700;
+  font-size: 24rpx;
+  text-align: center;
+}

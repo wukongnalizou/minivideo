@@ -1,0 +1,264 @@
+.vipbox{
+  overflow: hidden;
+}
+.topbox{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+}
+.navbox{
+  width: 90%;
+  height: 60rpx;
+  line-height: 50rpx;
+  display: flex;
+  font-size: 30rpx;
+  padding: 0 20rpx; 
+}
+.scrollx{
+  width: 650rpx;
+}
+.navlist{
+  width: 910rpx;
+  height: 50rpx;
+}
+.navbox .nav{
+  display: inline-block;
+  text-align: center;
+  width: 130rpx;
+}
+.navlist .on{
+  font-weight: 700;
+}
+.navlist .on::after{
+  content: '';
+  display: block;
+  width: 37rpx;
+  height: 5rpx;
+  background:#ffd600;
+  margin: 0 auto; 
+}
+.swiperbox{
+  width: 100%;
+  position: relative;
+}
+.swiperbox swiper{
+  margin-top:61rpx; 
+  width: 100%;
+  height: 439rpx;
+}
+.swiperbox swiper image{
+  width: 100%;
+  height: 100%;
+}
+.typetop{
+  width: 100%;
+  height:75rpx;
+  display: flex;
+  align-content: space-between;
+  line-height: 75rpx; 
+}
+.typetitle{
+  margin-left: 20rpx;
+  font-size:36rpx;
+  font-weight: 700; 
+}
+.typemore{
+  font-size:24rpx;
+  margin-left: 470rpx; 
+}
+.typelist::after{
+  content: "";
+  display: block;
+  width: 750rpx;
+  height: 15rpx;
+  background:#f0f0f0; 
+}
+.videolist{
+  margin-top: 61rpx;
+}
+.typeitem{
+  position: relative;
+  display: inline-block;
+  margin-left: 20rpx;
+  width: 345rpx;
+}
+.typeimg{
+  width: 345rpx;
+  height: 211rpx;
+  border-radius: 10rpx;
+}
+.typeimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.typeitemtitle{
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  margin-bottom: 42rpx;
+}
+.typeitem .videotime{
+  position: absolute;
+  top: 182rpx;
+  right: 16rpx;
+  font-size:20rpx;
+  color: #fff; 
+}
+.vipsign{
+  position: absolute;
+  top: 13rpx;
+  left: 16rpx;
+  width: 59rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  border-radius: 5rpx;
+  background: linear-gradient(to bottom, #FF3600 100%,#FF6C00 100%);
+  text-align: center;
+  color: #fff;
+  font-size:22rpx; 
+}
+.typeline{
+  width: 710rpx;
+  height: 1rpx;
+  background: #f0f0f0;
+  margin: 0 auto;
+}
+.refresh{
+  /* margin-top: 23rpx; */
+  padding: 23rpx 0;
+  text-align: center;
+  height: 21rpx;
+  line-height: 21rpx;
+}
+.refreshimg{
+  display: inline-block;
+  width:21rpx;
+  height: 21rpx; 
+}
+.refreshimg image{
+  width: 100%;
+  height: 100%;
+}
+.refreshtext{
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: #666;
+}
+.typerank{
+  display: flex;
+  width: 94%;
+  margin: 0 auto;
+  margin-bottom: 21rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.rankitem{
+  flex: 1;
+  /* padding: 10rpx 0; */
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 50rpx;
+   /* border-bottom: 5rpx solid #ffd600;  */
+}
+.on:after{
+  content: '';
+  display: block;
+  width: 37rpx;
+  height: 5rpx;
+  background:#ffd600; 
+  margin: 0 auto;
+}
+.videoitem::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15rpx;
+  background: #f0f0f0;
+}
+.videotop{
+  padding: 22rpx;
+}
+.videoheadimg{
+  display: inline-block;
+  width: 81rpx;
+  height: 81rpx;
+  border-radius: 50%;
+}
+.videoheadimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.videobox{
+  margin-left: 16rpx;
+  display: inline-block;
+}
+.videoperson{
+  font-size:30rpx; 
+}
+.videobox .videotime{
+  font-size: 24rpx;
+  color: #999999;
+}
+.video{
+  position: relative;
+  overflow: hidden;
+  width: 710rpx;
+  height: 398rpx;
+  margin: 0 auto;
+  border-radius: 5rpx;
+}
+.video image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+}
+.videotitle{
+  position: absolute;
+  width: 100%;
+  height: 160rpx;
+  padding-top: 29rpx;
+  padding-left: 33rpx;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(0,0,0,0.6)), to(rgba(120,0,0,0)));  
+  font-size:30rpx;
+  color: #fff;
+  top: 0;
+  left: 0; 
+}
+.videobottom{
+  display: flex;
+  margin-top: 14rpx;
+  margin-bottom: 14rpx;
+  align-content: center;
+  justify-content: center;
+}
+.item{
+  flex: 1;
+  text-align: center;
+  
+}
+.itemimg{
+  display: inline-block;
+  width: 33rpx;
+  height: 33rpx;
+}
+.itemimg image{
+  width: 100%;
+  height: 100%;
+}
+.itemnum{
+  margin-left: 10rpx;
+  display: inline-block;
+  font-size: 24rpx;
+}
+.videostart{
+  position: absolute;
+  top:168rpx;
+  left: 311rpx;
+  width:87rpx;
+  height: 87rpx;
+}
+.videostart image{
+  width: 100%;
+  height: 100%;
+}

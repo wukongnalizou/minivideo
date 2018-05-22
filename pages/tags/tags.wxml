@@ -1,0 +1,5 @@
+<view class='tagbox'>
+  <movable-area style="height: 750rpx; width: 750rpx;; background: red;">
+    <movable-view wx:for="{{tagarray}}" style="height: 50rpx; width: 150rpx; background: blue;" x="{{item.x}}" y="{{item.y}}" direction="all" bindchange="onChange" wx:key="tag" data-item="{{item}}" data-index="{{index}}">{{item.name}}</movable-view>
+  </movable-area>
+</view>

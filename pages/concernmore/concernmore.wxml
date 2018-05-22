@@ -1,0 +1,108 @@
+<view>
+  <view class='topgray'>
+    <view class='searchboxgray' bindtap='tosearch'>
+      <view class='searchimggray'>
+        <image src='../../img/index_search_gray.png'></image>
+      </view>
+      <text class='searchtextgray'>搜索你感兴趣的内容</text>
+    </view>
+  </view>
+  <view class='recommend'>
+    <view class='typerecommend'>
+      <view class="recommenditem {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap='switchNav'>推荐</view>
+      <view class="recommenditem {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap='switchNav'>搞笑达人</view>
+      <view class="recommenditem {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap='switchNav'>游戏达人</view>
+      <!-- <view class="recommenditem {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap='switchNav'>搞笑榜</view> -->
+    </view>
+    <view class='concernlist'>
+      <view class='concernitem'>
+        <view class='concernimg'>
+          <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        </view>
+        <view class='concerndetail'  bindtap='touser'>
+          <view class='concerntitle'>刚强打磨往</view>
+          <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+          <view class='concernaccount'>
+            <view class='accountbox'>
+              <text class='accountname'>视频总数:</text>
+              <text class='accountnum'>233</text>
+            </view>
+            <view class='accountbox'>
+              <text class='accountname'>粉丝量:</text>
+              <text class='accountnum'>3434</text>
+            </view>
+          </view>
+        </view>
+        <view class='concernperson'>
+          +关注
+        </view>
+      </view>
+      <view class='concernitem'>
+        <view class='concernimg'>
+          <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        </view>
+        <view class='concerndetail'>
+          <view class='concerntitle'>刚强打磨往</view>
+          <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+          <view class='concernaccount'>
+            <view class='accountbox'>
+              <text class='accountname'>视频总数:</text>
+              <text class='accountnum'>233</text>
+            </view>
+            <view class='accountbox'>
+              <text class='accountname'>粉丝量:</text>
+              <text class='accountnum'>3434</text>
+            </view>
+          </view>
+        </view>
+        <view class='concernperson'>
+          +关注
+        </view>
+      </view>
+      <view class='concernitem'>
+        <view class='concernimg'>
+          <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        </view>
+        <view class='concerndetail'>
+          <view class='concerntitle'>刚强打磨往</view>
+          <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+          <view class='concernaccount'>
+            <view class='accountbox'>
+              <text class='accountname'>视频总数:</text>
+              <text class='accountnum'>233</text>
+            </view>
+            <view class='accountbox'>
+              <text class='accountname'>粉丝量:</text>
+              <text class='accountnum'>3434</text>
+            </view>
+          </view>
+        </view>
+        <view class='concernperson'>
+          +关注
+        </view>
+      </view>
+      <view class='concernitem'>
+        <view class='concernimg'>
+          <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        </view>
+        <view class='concerndetail'>
+          <view class='concerntitle'>刚强打磨往</view>
+          <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+          <view class='concernaccount'>
+            <view class='accountbox'>
+              <text class='accountname'>视频总数:</text>
+              <text class='accountnum'>233</text>
+            </view>
+            <view class='accountbox'>
+              <text class='accountname'>粉丝量:</text>
+              <text class='accountnum'>3434</text>
+            </view>
+          </view>
+        </view>
+        <view class='concernperson'>
+          +关注
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,377 @@
+.indexbox{
+  overflow: hidden;
+}
+.topbox{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+}
+.navbox{
+  width: 90%;
+  height: 60rpx;
+  line-height: 50rpx;
+  display: flex;
+  font-size: 30rpx;
+  padding: 0 20rpx; 
+}
+.scrollx{
+  width: 650rpx;
+}
+.navlist{
+  width: 910rpx;
+  height: 50rpx;
+}
+.navbox .nav{
+  display: inline-block;
+  text-align: center;
+  width: 130rpx;
+}
+.navlist .on{
+  font-weight: 700;
+}
+.navlist .on::after{
+  content: '';
+  display: block;
+  width: 37rpx;
+  height: 5rpx;
+  background:#ffd600;
+  margin: 0 auto; 
+}
+.more{
+  position: absolute;
+  top: 3rpx;
+  right:20rpx;
+  display: inline-block; 
+  width: 30rpx;
+  height: 29rpx;
+}
+.more image{
+  width: 100%;
+  height: 100%;
+}
+.swiperbox{
+  width: 100%;
+  position: relative;
+}
+.swiperbox swiper{
+  margin-top:61rpx;
+  width: 100%;
+  height: 439rpx;
+}
+.swiperbox swiper image{
+  width: 100%;
+  height: 100%;
+}
+.searchbox{
+  position: absolute;
+  overflow: hidden;
+  top:18rpx; 
+  left: 20rpx;
+  width:710rpx;
+  height: 53rpx;
+  line-height: 53rpx;
+  background: rgba(255,255,255,0.33);
+  border: 1rpx solid #fff;
+  border-radius: 27rpx;
+  /* text-align: center; */
+}
+.searchbox .searchimg{
+  margin-top: 5rpx;
+  width:30rpx;
+  height: 30rpx;
+  margin-left: 227rpx; 
+}
+.searchbox .searchimg image{
+  display: inline-block;
+  width:100%;
+  height: 100%;
+}
+.searchtext{
+  position: absolute;
+  top:0;
+  left: 270rpx; 
+  font-size: 24rpx;
+  color: #fff;
+}
+.typetop{
+  position: relative;
+  width: 100%;
+  height:75rpx;
+  display: flex;
+  align-content: space-between;
+  line-height: 75rpx; 
+}
+.typetitle{
+  margin-left: 20rpx;
+  font-size:36rpx;
+  font-weight: 700; 
+}
+.typeset{
+  display: inline-block; 
+  margin-left: 486rpx;
+  width: 24rpx;
+  height: 24rpx;
+  line-height: 75rpx;
+}
+.typeset image{
+  width: 100%;
+  height: 100%;
+}
+.setdialog{
+  position: absolute;
+  left: 580rpx;
+  top: 64rpx;
+  z-index: 9;
+  width: 147rpx;
+  height: 118rpx;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5rpx;
+  box-shadow: 0rpx 0rpx 11rpx rgba(0,0,0,0.25) 
+}
+.setitem{
+  font-size:24rpx;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx; 
+}
+.setitem:last-child::before{
+  content: '';
+  display: block;
+  width: 108rpx;
+  height: 1rpx;
+  background: #999;
+  margin: 0 auto;
+}
+.columnline{
+  display: inline-block;
+  margin-left: 30rpx;
+  margin-top: 24rpx;
+  width: 1rpx;
+  height: 26rpx;
+  background: #e8e8e8;
+}
+.typemore{
+  display: inline-block;
+  font-size:24rpx;
+  margin-left: 30rpx;
+  /* margin-left: 572rpx;  */
+}
+.typelist::after{
+  content: "";
+  display: block;
+  width: 750rpx;
+  height: 15rpx;
+  background:#f0f0f0; 
+} 
+/* .typelist:nth-child(2n-1){
+
+} */
+.typeitem{
+  position: relative;
+  display: inline-block;
+  margin-left: 20rpx;
+  width: 345rpx;
+}
+.typeimg{
+  width: 345rpx;
+  height: 211rpx;
+  border-radius: 10rpx;
+}
+.typeimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.typeitemtitle{
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  margin-bottom: 42rpx;
+}
+.typeitem .videotime{
+  position: absolute;
+  top: 182rpx;
+  right: 16rpx;
+  font-size:20rpx;
+  color: #fff; 
+}
+.vipsign{
+  position: absolute;
+  top: 13rpx;
+  left: 16rpx;
+  width: 59rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  border-radius: 5rpx;
+  background: linear-gradient(to bottom, #FF3600 100%,#FF6C00 100%);
+  text-align: center;
+  color: #fff;
+  font-size:22rpx; 
+}
+.typeline{
+  width: 710rpx;
+  height: 1rpx;
+  background: #f0f0f0;
+  margin: 0 auto;
+}
+.refresh{
+  /* margin-top: 23rpx; */
+  padding: 23rpx 0;
+  text-align: center;
+  height: 21rpx;
+  line-height: 21rpx;
+}
+.refreshimg{
+  display: inline-block;
+  width:21rpx;
+  height: 21rpx; 
+}
+.refreshimg image{
+  width: 100%;
+  height: 100%;
+}
+.refreshtext{
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: #666;
+}
+.topgray{
+  width: 100%;
+  height: 89rpx;
+  overflow: hidden;
+  margin-top: 60rpx;
+}
+.topdis::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15rpx;
+  background: #f0f0f0;
+}
+.searchboxgray{
+  position: relative;
+  /* overflow: hidden; */
+  margin: 0 auto;
+  margin-top: 18rpx;
+  /* margin-bottom: 18rpx; */
+  width:710rpx;
+  height: 53rpx;
+  line-height: 53rpx;
+  background: #F0F0F0;
+  border: 1rpx solid #fff;
+  border-radius: 27rpx;
+  /* text-align: center; */
+}
+.searchboxgray .searchimggray{
+  margin-top: 5rpx;
+  width:30rpx;
+  height: 30rpx;
+  margin-left: 227rpx; 
+}
+.searchboxgray .searchimggray image{
+  display: inline-block;
+  width:100%;
+  height: 100%;
+}
+.searchtextgray{
+  position: absolute;
+  top:0;
+  left: 270rpx; 
+  font-size: 24rpx;
+  color: #999;
+}
+.videoitem::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15rpx;
+  background: #f0f0f0;
+}
+.videotop{
+  padding: 22rpx;
+}
+.videoheadimg{
+  display: inline-block;
+  width: 81rpx;
+  height: 81rpx;
+  border-radius: 50%;
+}
+.videoheadimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.videobox{
+  margin-left: 16rpx;
+  display: inline-block;
+}
+.videoperson{
+  font-size:30rpx; 
+}
+.videobox .videotime{
+  font-size: 24rpx;
+  color: #999999;
+}
+.video{
+  position: relative;
+  overflow: hidden;
+  width: 710rpx;
+  height: 398rpx;
+  margin: 0 auto;
+  border-radius: 5rpx;
+}
+.video image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+}
+.videotitle{
+  position: absolute;
+  width: 100%;
+  height: 160rpx;
+  padding-top: 29rpx;
+  padding-left: 33rpx;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(0,0,0,0.6)), to(rgba(120,0,0,0)));  
+  font-size:30rpx;
+  color: #fff;
+  top: 0;
+  left: 0; 
+}
+.videobottom{
+  display: flex;
+  margin-top: 14rpx;
+  margin-bottom: 14rpx;
+  align-content: center;
+  justify-content: center;
+}
+.item{
+  flex: 1;
+  text-align: center;
+  
+}
+.itemimg{
+  display: inline-block;
+  width: 33rpx;
+  height: 33rpx;
+}
+.itemimg image{
+  width: 100%;
+  height: 100%;
+}
+.itemnum{
+  margin-left: 10rpx;
+  display: inline-block;
+  font-size: 24rpx;
+}
+.videostart{
+  position: absolute;
+  top:168rpx;
+  left: 311rpx;
+  width:87rpx;
+  height: 87rpx;
+}
+.videostart image{
+  width: 100%;
+  height: 100%;
+}

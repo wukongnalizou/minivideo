@@ -1,0 +1,22 @@
+<view>
+  <view class='changetop'>
+    <view class='changename'>我的福利券</view>
+    <view class='changenum'>40</view>
+  </view>
+  <view class='changedetail'>
+    <view class='changeimg'>
+      <image src='../../img/changevip_crown.png'></image>
+    </view>
+    <view class='changetitle'>兑换VIP</view>
+  </view>
+  <view class='changelist'>
+    <view class='changeitem clearfix'>
+      <view class='ctitle'>月VIP会员 (300福利券)</view>
+      <view class='cchange'>兑换</view>
+    </view>
+    <view class='changeitem clearfix'>
+      <view class='ctitle'>1日VIP体验卡 (15福利券)</view>
+      <view class='cchange'>兑换</view>
+    </view>
+  </view>
+</view>

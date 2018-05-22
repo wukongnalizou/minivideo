@@ -1,0 +1,235 @@
+<view class="searchwrapper">
+  <view class='searchbox'>
+    <view class='searchimg'>
+      <image src='../../img/search_search.png'></image>
+    </view>
+    <input placeholder="搜索你感兴趣的内容" placeholder-class="searchplaceholder" class='searchinput'/>
+  </view>
+  <block wx:if="{{recommend}}">
+    <view class='searchlist'>
+      <view class='searchtop'>
+        <view class='searchtitle'>热门搜索</view>
+      </view>
+      <view class='searchtaglist'>
+        <view class='searchtag'>非自然死亡</view>
+        <view class='searchtag'>复仇者联盟3</view>
+        <view class='searchtag'>第五人格</view>
+        <view class='searchtag'>全职高手</view>
+        <view class='searchtag'>LPL</view>
+        <view class='searchtag'>第五人格</view>
+        <view class='searchtag'>全职高手</view>
+      </view>
+    </view>
+    <view class='searchlist'>
+      <view class='searchtop'>
+        <view class='searchtitle'>搜索历史</view>
+        <view class='searchdel' bindtap='showdialog'>
+          <view class='deltext'>删除</view>
+          <view class='delimg'>
+            <image src='../../img/search_del.png'></image>
+          </view>
+        </view>
+      </view>
+      <view class='searchtaglist'>
+        <view class='searchtag'>非自然死亡</view>
+        <view class='searchtag'>复仇者联盟3</view>
+        <view class='searchtag'>第五人格</view>
+        <view class='searchtag'>全职高手</view>
+        <view class='searchtag'>LPL</view>
+        <view class='searchtag'>第五人格</view>
+        <view class='searchtag'>全职高手</view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='searchtab'>
+      <view class="tabitem {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap='switchNav'>视频</view>
+      <view class="tabitem {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap='switchNav'>用户</view>
+    </view>
+    <view class='tabcontent' wx:if="{{currentTab == 0}}">
+      <view class='videolist'>
+        <view class='videoitem'>
+          <view class='videotop'>
+            <view class='videoheadimg'>
+              <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='videobox'>
+              <view class='videoperson'>大白鲨UI设计师</view>
+              <view class='videotime'>刚刚</view>
+            </view>
+          </view>
+          <view class='video'>
+            <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            <view class='videotitle'>苏军战略要地被围900天弹尽粮绝</view>
+            <view class='videostart'>
+              <image src='../../img/concern_start.png'></image>
+            </view>
+          </view>
+          <view class='videobottom'>
+            <view class='item'>
+              <view class='itemimg'>
+                <image src='../../img/concern_good_active.png'></image>
+              </view>
+              <view class='itemnum'>693</view>
+            </view>
+            <view class='item'>
+              <view class='itemimg'>
+                <image src='../../img/concern_discuss.png'></image>
+              </view>
+              <view class='itemnum'>评论</view>
+            </view>
+            <view class='item'>
+              <view class='itemimg'>
+                <image src='../../img/concern_share.png'></image>
+              </view>
+              <view class='itemnum'>分享</view>
+            </view>
+          </view>
+        </view>
+        <view class='videoitem'>
+          <view class='videotop'>
+            <view class='videoheadimg'>
+              <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='videobox'>
+              <view class='videoperson'>大白鲨UI设计师</view>
+              <view class='videotime'>刚刚</view>
+            </view>
+          </view>
+          <view class='video'>
+            <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            <view class='videotitle'>苏军战略要地被围900天弹尽粮绝</view>
+            <view class='videostart'>
+              <image src='../../img/concern_start.png'></image>
+            </view>
+          </view>
+          <view class='videobottom'>
+            <view class='item'>
+              <view class='itemimg'>
+                <image src='../../img/concern_good_active.png'></image>
+              </view>
+              <view class='itemnum'>693</view>
+            </view>
+            <view class='item'>
+              <view class='itemimg'>
+                <image src='../../img/concern_discuss.png'></image>
+              </view>
+              <view class='itemnum'>评论</view>
+            </view>
+            <view class='item'>
+              <view class='itemimg'>
+                <image src='../../img/concern_share.png'></image>
+              </view>
+              <view class='itemnum'>分享</view>
+            </view>
+          </view>
+        </view>
+      </view> 
+      <!-- <view class='nonedata'>
+        <view class='noneimg'>
+          <image src='../../img/search_none.png'></image>
+        </view>
+      </view>  -->
+    </view>
+    <view class='tabcontent' wx:if="{{currentTab == 1}}">
+      <view class='concernlist'>
+        <view class='concernitem'>
+          <view class='concernimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='concerndetail'>
+            <view class='concerntitle'>刚强打磨往</view>
+            <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+            <view class='concernaccount'>
+              <view class='accountbox'>
+                <text class='accountname'>视频总数:</text>
+                <text class='accountnum'>233</text>
+              </view>
+              <view class='accountbox'>
+                <text class='accountname'>粉丝量:</text>
+                <text class='accountnum'>3434</text>
+              </view>
+            </view>
+          </view>
+          <view class='concernperson'>
+            +关注
+          </view>
+        </view>
+        <view class='concernitem'>
+          <view class='concernimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='concerndetail'>
+            <view class='concerntitle'>刚强打磨往</view>
+            <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+            <view class='concernaccount'>
+              <view class='accountbox'>
+                <text class='accountname'>视频总数:</text>
+                <text class='accountnum'>233</text>
+              </view>
+              <view class='accountbox'>
+                <text class='accountname'>粉丝量:</text>
+                <text class='accountnum'>3434</text>
+              </view>
+            </view>
+          </view>
+          <view class='concernperson'>
+            +关注
+          </view>
+        </view>
+        <view class='concernitem'>
+          <view class='concernimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='concerndetail'>
+            <view class='concerntitle'>刚强打磨往</view>
+            <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+            <view class='concernaccount'>
+              <view class='accountbox'>
+                <text class='accountname'>视频总数:</text>
+                <text class='accountnum'>233</text>
+              </view>
+              <view class='accountbox'>
+                <text class='accountname'>粉丝量:</text>
+                <text class='accountnum'>3434</text>
+              </view>
+            </view>
+          </view>
+          <view class='concernperson'>
+            +关注
+          </view>
+        </view>
+        <view class='concernitem'>
+          <view class='concernimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='concerndetail'>
+            <view class='concerntitle'>刚强打磨往</view>
+            <view class='concernintro'>这家伙很懒，什么也没留下!</view>
+            <view class='concernaccount'>
+              <view class='accountbox'>
+                <text class='accountname'>视频总数:</text>
+                <text class='accountnum'>233</text>
+              </view>
+              <view class='accountbox'>
+                <text class='accountname'>粉丝量:</text>
+                <text class='accountnum'>3434</text>
+              </view>
+            </view>
+          </view>
+          <view class='concernperson'>
+            +关注
+          </view>
+        </view>
+      </view>
+      <!-- <view class='nonedata'>
+        <view class='noneimg'>
+          <image src='../../img/search_none.png'></image>
+        </view>
+      </view> -->
+    </view>
+  </block>
+  <view wx:if="{{dialog}}">
+    <dialog bindselefalse="hidedialog" dialogtext="{{dialogtext}}"></dialog>
+  </view>
+</view>

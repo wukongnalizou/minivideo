@@ -1,0 +1,141 @@
+<view class="concernbox">
+  <block wx:if="{{!nodata}}">
+    <view class='topbox'>
+      <view class='scrollbox'>
+        <scroll-view scroll-x="true" scroll-with-animation="true">
+          <view class='concernlist'>
+            <view class='concernitem'>
+              <view class='concernimg'>
+                <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+              </view>
+              <view class='concernname'>刚强大魔王哈哈哈哈</view>
+            </view>
+            <view class='concernitem'>
+              <view class='concernimg'>
+                <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+              </view>
+              <view class='concernname'>刚强大魔王哈哈哈哈</view>
+            </view>
+            <view class='concernitem'>
+              <view class='concernimg'>
+                <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+              </view>
+              <view class='concernname'>刚强大魔王哈哈哈哈</view>
+            </view>
+            <view class='concernitem'>
+              <view class='concernimg'>
+                <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+              </view>
+              <view class='concernname'>刚强大魔王哈哈哈哈</view>
+            </view>
+            <view class='concernitem'>
+              <view class='concernimg'>
+                <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+              </view>
+              <view class='concernname'>刚强大魔王哈哈哈哈</view>
+            </view>
+            <view class='concernitem'>
+              <view class='concernimg'>
+                <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+              </view>
+              <view class='concernname'>刚强大魔王哈哈哈哈</view>
+            </view>
+          </view>
+        </scroll-view>
+        <view class='concernadd' bindtap='toaddmore'>
+          <view class='concernimg'>
+            <image src='../../img/addconcern.png'></image>
+          </view>
+          <view class='concernname add'>关注更多</view>
+        </view>
+      </view>
+    </view>
+    <view class='videolist'>
+      <view class='videoitem'>
+        <view class='videotop'>
+          <view class='videoheadimg'>
+            <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+          </view>
+          <view class='videobox'>
+            <view class='videoperson'>大白鲨UI设计师</view>
+            <view class='videotime'>刚刚</view>
+          </view>
+        </view>
+        <view class='video'>
+          <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+          <view class='videotitle'>苏军战略要地被围900天弹尽粮绝</view>
+          <view class='videostart'>
+            <image src='../../img/concern_start.png'></image>
+          </view>
+        </view>
+        <view class='videobottom'>
+          <view class='item'>
+            <view class='itemimg'>
+              <image src='../../img/concern_good_active.png'></image>
+            </view>
+            <view class='itemnum'>693</view>
+          </view>
+          <view class='item' bindtap='tovideo'>
+            <view class='itemimg'>
+              <image src='../../img/concern_discuss.png'></image>
+            </view>
+            <view class='itemnum'>评论</view>
+          </view>
+          <view class='item'>
+            <view class='itemimg'>
+              <image src='../../img/concern_share.png'></image>
+            </view>
+            <view class='itemnum'>分享</view>
+          </view>
+        </view>
+      </view>
+      <view class='videoitem'>
+        <view class='videotop'>
+          <view class='videoheadimg'>
+            <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+          </view>
+          <view class='videobox'>
+            <view class='videoperson'>大白鲨UI设计师</view>
+            <view class='videotime'>刚刚</view>
+          </view>
+        </view>
+        <view class='video'>
+          <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+          <view class='videotitle'>苏军战略要地被围900天弹尽粮绝</view>
+          <view class='videostart'>
+            <image src='../../img/concern_start.png'></image>
+          </view>
+        </view>
+        <view class='videobottom'>
+          <view class='item'>
+            <view class='itemimg'>
+              <image src='../../img/concern_good_active.png'></image>
+            </view>
+            <view class='itemnum'>693</view>
+          </view>
+          <view class='item'>
+            <view class='itemimg'>
+              <image src='../../img/concern_discuss.png'></image>
+            </view>
+            <view class='itemnum'>评论</view>
+          </view>
+          <view class='item'>
+            <view class='itemimg'>
+              <image src='../../img/concern_share.png'></image>
+            </view>
+            <view class='itemnum'>分享</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='nodata'>
+      <view class='nodatatitle'>~~您还没有任何关注哦~~</view>
+      <view class='nodataimg'>
+        <image src='../../img/nodata.png'></image>
+      </view>
+      <view class='addconcern'>去关注</view>
+    </view>
+  </block>  
+</view>

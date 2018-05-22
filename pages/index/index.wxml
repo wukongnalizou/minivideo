@@ -1,0 +1,241 @@
+<view class='indexbox'>
+  <view class='topbox'>
+    <view class='navbox'>
+      <scroll-view scroll-x="true" scroll-with-animation="true">
+        <view class='scrollx'>
+          <view class='navlist'>
+            <view class="nav {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap='switchNav'>精选</view>
+            <view class="nav {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap='switchNav'>搞笑</view>
+            <view class="nav {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap='switchNav'>正能量</view>
+            <view class="nav {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap='switchNav'>情感</view>
+            <view class="nav {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap='switchNav'>科技</view>
+            <view class="nav {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap='switchNav'>科技</view>
+            <view class="nav {{currentTab==6 ? 'on' : ''}}" data-current="6" bindtap='switchNav'>科技</view>
+          </view>
+        </view>
+      </scroll-view> 
+      <view class='more'>
+        <image src='../../img/index_add.png' bindtap='totag'></image>
+      </view> 
+    </view>
+  </view>
+  <block wx:if="{{currentTab == 0}}"> 
+    <view class='swiperbox'>
+      <swiper indicator-dots="false" autoplay="true" interval="5000" duration="1000" indicator-active-color="#FFD600" circular="true">
+        <block wx:for="{{banners}}" wx:key="banner">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image"/>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='searchbox' bindtap='tosearch'>
+        <view class='searchimg'>
+          <image src='../../img/index_search.png'></image>
+        </view>
+        <text class='searchtext'>搜索你感兴趣的内容</text>
+      </view>
+    </view>
+    <view class='typelist'>
+      <view class='typetop'>
+        <view class='typetitle'>热播</view>
+         <view class='typeset'>
+          <!-- <image src='../../img/index_set.png'></image> -->
+        </view>
+        <!-- <view class='setdialog' wx:if="{{setbtn}}">
+          <view class='setitem'>频道置顶</view>
+          <view class='setitem' bindtap='hideset'>不感兴趣</view>
+        </view> -->
+        <view class='columnline' style='visibility:hidden'></view> 
+        <view class='typemore' bindtap='tomore'>更多></view>
+      </view>
+      <view class='typeitembox'>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+      </view>
+      <view class='typeline'></view>
+      <view class='refresh'>
+        <view class='refreshimg'>
+          <image src='../../img/refresh.png'></image>
+        </view>
+        <text class='refreshtext'>换一批试试</text>
+      </view>
+    </view>
+    <view class='typelist'>
+      <view class='typetop'>
+        <view class='typetitle'>热播</view>
+        <view class='typeset' bindtap='toggleset'>
+          <image src='../../img/index_set.png'></image>
+        </view>
+        <view class='setdialog' wx:if="{{setbtn}}">
+          <view class='setitem'>频道置顶</view>
+          <view class='setitem' bindtap='nofunny'>不感兴趣</view>
+        </view>
+        <view class='columnline'></view>
+        <view class='typemore'>更多></view>
+      </view>
+      <view class='typeitembox'>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+        <view class='typeitem'>
+          <view class='typeimg'>
+            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+          </view>
+          <view class='vipsign'>VIP</view>
+          <view class='videotime'>12:09</view>
+          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+        </view>
+      </view>
+      <view class='typeline'></view>
+      <view class='refresh'>
+        <view class='refreshimg'>
+          <image src='../../img/refresh.png'></image>
+        </view>
+        <text class='refreshtext'>换一批试试</text>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='topgray'>
+      <view class='searchboxgray' bindtap='tosearch'>
+        <view class='searchimggray'>
+          <image src='../../img/index_search_gray.png'></image>
+        </view>
+        <text class='searchtextgray'>搜索你感兴趣的内容</text>
+      </view>
+    </view>
+    <view class='topdis'></view>
+    <view class='videolist'>
+    <view class='videoitem'>
+      <view class='videotop'>
+        <view class='videoheadimg'>
+          <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+        </view>
+        <view class='videobox'>
+          <view class='videoperson'>大白鲨UI设计师</view>
+          <view class='videotime'>刚刚</view>
+        </view>
+      </view>
+      <view class='video'>
+        <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+        <view class='videotitle'>苏军战略要地被围900天弹尽粮绝</view>
+        <view class='videostart'>
+          <image src='../../img/concern_start.png'></image>
+        </view>
+      </view>
+      <view class='videobottom'>
+        <view class='item'>
+          <view class='itemimg'>
+            <image src='../../img/concern_good_active.png'></image>
+          </view>
+          <view class='itemnum'>693</view>
+        </view>
+        <view class='item'>
+          <view class='itemimg'>
+            <image src='../../img/concern_discuss.png'></image>
+          </view>
+          <view class='itemnum'>评论</view>
+        </view>
+        <view class='item'>
+          <view class='itemimg'>
+            <image src='../../img/concern_share.png'></image>
+          </view>
+          <view class='itemnum'>分享</view>
+        </view>
+      </view>
+    </view>
+    <view class='videoitem'>
+      <view class='videotop'>
+        <view class='videoheadimg'>
+          <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+        </view>
+        <view class='videobox'>
+          <view class='videoperson'>大白鲨UI设计师</view>
+          <view class='videotime'>刚刚</view>
+        </view>
+      </view>
+      <view class='video'>
+        <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+        <view class='videotitle'>苏军战略要地被围900天弹尽粮绝</view>
+        <view class='videostart'>
+          <image src='../../img/concern_start.png'></image>
+        </view>
+      </view>
+      <view class='videobottom'>
+        <view class='item'>
+          <view class='itemimg'>
+            <image src='../../img/concern_good_active.png'></image>
+          </view>
+          <view class='itemnum'>693</view>
+        </view>
+        <view class='item'>
+          <view class='itemimg'>
+            <image src='../../img/concern_discuss.png'></image>
+          </view>
+          <view class='itemnum'>评论</view>
+        </view>
+        <view class='item'>
+          <view class='itemimg'>
+            <image src='../../img/concern_share.png'></image>
+          </view>
+          <view class='itemnum'>分享</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </block>
+  <view wx:if="{{dialog}}">
+    <dialog bindselefalse="hidedialog" dialogtext="{{dialogtext}}"></dialog>
+  </view>
+</view>

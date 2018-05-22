@@ -1,0 +1,75 @@
+<view class='userbox'>
+  <view class='userdetail'>
+    <view class='userbackground'>
+      <image src='../../img/userbackground.png'></image>
+    </view>
+    <view class='user'>
+      <view class='userback'>
+        <view class='userimg'>
+          <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        </view>
+      </view> 
+      <view class='username'>刚强打磨网</view>
+    </view>
+    <view class='usercontent'>
+      <view class='intro'>这家伙很难，什么也没留下</view>
+      <view class='concernaccount'>
+        <view class='accountbox'>
+          <text class='accountnum'>233</text>
+          <text class='accountname'>视频</text> 
+        </view>
+        <view class='accountbox'>
+          <text class='accountnum'>3434</text>
+          <text class='accountname'>粉丝</text>
+        </view>
+      </view>
+      <view class='concernperson'>
+        +关注
+      </view>
+    </view>
+  </view>
+  <view class='uservideo'>
+    <view class='videotitle'>
+      <text>他的视频</text>
+    </view> 
+    <view class='videoitem'>
+      <view class='videoimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        <view class='videodate'>12:09</view>
+      </view>
+      <view class='videodetail'>
+        <view class='videoname'>苏军战略要地卑微900天弹尽粮绝。传奇明镜到哈哈哈哈</view>
+        <view class='videobottom'>
+          <view class='videoplay'>被播放2.3万次</view>
+          <view class='videotime'>3天前</view>
+        </view>
+      </view>
+    </view>
+    <view class='videoitem'>
+      <view class='videoimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        <view class='videodate'>12:09</view>
+      </view>
+      <view class='videodetail'>
+        <view class='videoname'>苏军战略要地卑微900天弹尽粮绝。传奇明镜到哈哈哈哈</view>
+        <view class='videobottom'>
+          <view class='videoplay'>被播放2.3万次</view>
+          <view class='videotime'>3天前</view>
+        </view>
+      </view>
+    </view>
+    <view class='videoitem'>
+      <view class='videoimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+        <view class='videodate'>12:09</view>
+      </view>
+      <view class='videodetail'>
+        <view class='videoname'>苏军战略要地卑微900天弹尽粮绝。传奇明镜到哈哈哈哈</view>
+        <view class='videobottom'>
+          <view class='videoplay'>被播放2.3万次</view>
+          <view class='videotime'>3天前</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

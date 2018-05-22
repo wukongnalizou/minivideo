@@ -1,0 +1,177 @@
+.userbox{
+  width: 100%;
+}
+.userdetail{
+  position: relative;
+}
+.userdetail::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15rpx;
+  background: #f0f0f0;
+}
+.userbackground{
+  width: 100%;
+  height: 154rpx;
+}
+.userbackground image{
+  width: 100%;
+  height: 100%;
+}
+.user{
+  position: absolute;
+  display: flex;
+  top: 44rpx;
+  left: 44rpx;
+  /* margin-top: 44rpx; */
+  /* margin-left: 44rpx; */
+}
+.userback{
+  display: inline-block;
+  width: 141rpx;
+  height: 141rpx;
+  background: #f0f0f0;
+  border-radius: 50%;
+}
+.userimg{
+  width:128rpx;
+  height: 128rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  transform: translateY(6.5rpx)
+}
+.userimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.username{
+  display: inline-block;
+  font-size: 36rpx;
+  font-weight: 700;
+  margin-left: 10rpx;
+  margin-top: 52rpx;
+}
+.usercontent{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 154rpx;
+}
+.intro{
+  margin-top: 49rpx;
+  margin-left: 51rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.concernaccount{
+  margin-left: 51rpx;
+}
+.accountbox{
+  display: inline-block;
+}
+.accountbox:last-child{
+  margin-left: 36rpx;
+}
+.accountnum{
+  font-size: 24rpx;
+}
+.accountname{
+  margin-left: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.concernperson{
+  position: absolute;
+  display: inline-block;
+  width: 109rpx;
+  height: 52rpx;
+  top: 54rpx;
+  right: 20rpx;
+  line-height: 52rpx;
+  border-radius: 26rpx;
+  background: #ffd600;
+  color: #000;
+  font-weight: 700;
+  font-size: 24rpx;
+  text-align: center;
+}
+.videotitle{
+  width: 100%;
+  height: 74rpx;
+  line-height: 74rpx;
+  /* margin-left: 21rpx; */
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.videotitle text{
+  margin-left: 21rpx;
+}
+.videotitle::after{
+  content: '';
+  display: block;
+  width: 710rpx;
+  height: 1rpx;
+  background: #f0f0f0;
+  margin: 0 auto;
+}
+.videoitem::after{
+  content: '';
+  display: block;
+  width: 710rpx;
+  height: 1rpx;
+  background: #f0f0f0;
+  margin: 0 auto;
+  clear: both;
+}
+.videoimg{
+  position: relative;
+  width: 345rpx;
+  height: 211rpx;
+  display: inline-block;
+  float: left;
+  margin-top: 27rpx;
+  margin-bottom: 27rpx;
+  margin-left: 21rpx;
+  border-radius: 10rpx;
+}
+.videoimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.videodate{
+  position: absolute;
+  top: 182rpx;
+  right: 16rpx;
+  font-size:20rpx;
+  color: #fff;
+}
+.videodetail{
+  display: inline-block;
+  float: left;
+  margin-top: 61rpx;
+  margin-left: 16rpx;
+}
+.videoname{
+  /* display: inline-block; */
+  width: 322rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.videoplay{
+  display: inline-block;
+  font-size: 24rpx;
+  color: #999;
+}
+.videotime{
+  display: inline-block;
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 30rpx;
+}

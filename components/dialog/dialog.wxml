@@ -1,0 +1,7 @@
+<view class="dialog">
+   <view class='content'>{{dialogtext}}</view> 
+  <view class='btngroup'>
+    <view class='btn' bindtap='selefase'>否</view>
+    <view class='btn'>是</view>
+  </view>
+</view>

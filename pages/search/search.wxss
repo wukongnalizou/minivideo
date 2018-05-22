@@ -1,0 +1,285 @@
+.searchbox{
+  position: relative;
+  width: 710rpx;
+  height: 68rpx;
+  margin: 0 auto;
+  margin-top: 13rpx;
+  background: #f0f0f0;
+  border-radius: 34rpx;
+}
+.searchimg{
+  position: absolute;
+  top:15rpx;
+  left: 16rpx;
+  width: 38rpx;
+  height: 38rpx;
+}
+.searchimg image{
+  width: 100%;
+  height: 100%;
+}
+.searchplaceholder{
+  color: #999;
+  margin-left: 180rpx;
+  font-size: 24rpx;
+}
+.searchinput{
+  padding-left: 74rpx;
+  height: 68rpx;
+  font-size: 24rpx;
+  color:#999;
+}
+.searchlist{
+  margin-top: 20rpx;
+}
+.searchtop{
+  width: 710rpx;
+  padding: 14rpx 0;
+  margin: 0 auto;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.searchtitle{
+  display: inline-block;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.searchdel{
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.deltext{
+  display: inline-block;
+  margin-left: 470rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  /* line-height: 25rpx; */
+  font-size: 24rpx;
+}
+.delimg{
+  display: inline-block;
+  margin-left: 8rpx;
+  width:24rpx;
+  height:24rpx;
+  transform: translateY(2rpx); 
+}
+.delimg image{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.searchtaglist{
+  /* width: 710rpx; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.searchtag{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  padding: 17rpx 25rpx;
+  background: #f0f0f0;
+  border-radius: 5rpx;
+  font-size: 22rpx;
+}
+.searchtab{
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 13rpx;
+  /* margin-bottom: 21rpx; */
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.tabitem{
+  display: inline-block;
+  text-align: center;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+}
+.on{
+  font-weight: 700; 
+}
+.on:after{
+  content: '';
+  display: block;
+  width: 37rpx;
+  height: 5rpx;
+  background:#ffd600;
+  margin: 0 auto;
+}
+.videolist{
+  margin-top: 13rpx;
+}
+.videoitem::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15rpx;
+  background: #f0f0f0;
+}
+.videotop{
+  padding: 22rpx;
+}
+.videoheadimg{
+  display: inline-block;
+  width: 81rpx;
+  height: 81rpx;
+  border-radius: 50%;
+}
+.videoheadimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.videobox{
+  margin-left: 16rpx;
+  display: inline-block;
+}
+.videoperson{
+  font-size:30rpx; 
+}
+.videotime{
+  font-size: 24rpx;
+  color: #999999;
+}
+.video{
+  position: relative;
+  overflow: hidden;
+  width: 710rpx;
+  height: 398rpx;
+  margin: 0 auto;
+  border-radius: 5rpx;
+}
+.video image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+}
+.videotitle{
+  position: absolute;
+  width: 100%;
+  height: 160rpx;
+  padding-top: 29rpx;
+  padding-left: 33rpx;
+  background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgba(0,0,0,0.6)), to(rgba(120,0,0,0)));  
+  font-size:30rpx;
+  color: #fff;
+  top: 0;
+  left: 0; 
+}
+.videobottom{
+  display: flex;
+  margin-top: 14rpx;
+  margin-bottom: 14rpx;
+  align-content: center;
+  justify-content: center;
+}
+.item{
+  flex: 1;
+  text-align: center;
+  
+}
+.itemimg{
+  display: inline-block;
+  width: 33rpx;
+  height: 33rpx;
+}
+.itemimg image{
+  width: 100%;
+  height: 100%;
+}
+.itemnum{
+  margin-left: 10rpx;
+  display: inline-block;
+  font-size: 24rpx;
+}
+.videostart{
+  position: absolute;
+  top:168rpx;
+  left: 311rpx;
+  width:87rpx;
+  height: 87rpx;
+}
+.videostart image{
+  width: 100%;
+  height: 100%;
+}
+.nonedata{
+  position: relative;
+}
+.noneimg{
+  width: 385rpx;
+  height: 385rpx;
+  margin: 0 auto;
+  margin-top: 300rpx;
+}
+.noneimg image{
+  width: 100%;
+  height: 100%;
+}
+.concernitem{
+  position: relative;
+  width: 710rpx;
+  height: 168rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  margin: 0 auto;
+}
+.concerndetail{
+  margin-left: 31rpx;
+}
+.concernimg{
+  display: inline-block;
+  width: 128rpx;
+  height: 128rpx;
+  transform: translateY(20rpx);
+  border-radius: 50%;
+}
+.concernimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.concerndetail{
+  display: inline-block;
+}
+.concerntitle{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.concernintro{
+  font-size: 22rpx;
+  color: #999;
+}
+.accountbox{
+  display: inline-block;
+  font-size: 0;
+  margin-bottom: 21rpx;
+}
+.accountbox:last-child{
+  margin-left: 36rpx;
+}
+.accountname{
+  display: inline-block;
+  font-size: 22rpx;
+  color: #999;
+}
+.accountnum{
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 22rpx;
+}
+.concernperson{
+  position: absolute;
+  display: inline-block;
+  width: 109rpx;
+  height: 52rpx;
+  top: 59rpx;
+  right: 20rpx;
+  line-height: 52rpx;
+  border-radius: 26rpx;
+  background: #ffd600;
+  color: #000;
+  font-weight: 700;
+  font-size: 24rpx;
+  text-align: center;
+}

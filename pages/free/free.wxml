@@ -1,0 +1,113 @@
+<view class="freebox">
+  <view class='freetop'>
+    <view class='topback'>
+      <image src='../../img/free_back.png'></image>
+    </view>
+    <view class='ticketname'>我的福利券</view>
+    <view class='ticketnum'>40</view>
+    <view class='ticketvip' bindtap='tochangevip'>兑换VIP</view>
+  </view>
+  <view class='taskvip'>
+    <image src='../../img/free_change.png'></image>
+  </view>
+  <view class='freenav'>
+    <view class="navitem {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap='switchNav'>每日福利</view>
+    <view class="navitem {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap='switchNav'>收支明细</view>
+  </view>
+  <block wx:if="{{currentTab == 1}}">
+    <view class='daydetail'>
+      <view class='daydetailist'>
+        <view class='daydetailitem'>
+          <view class='detailname'>每日领取</view>
+          <view class='detailtime'>2018-05-19 12:58:00</view>
+          <view class='detailnum'>+1</view>
+        </view>
+        <view class='daydetailitem'>
+          <view class='detailname'>每日领取</view>
+          <view class='detailtime'>2018-05-19 12:58:00</view>
+          <view class='detailnum'>+1</view>
+        </view>
+        <view class='daydetailitem'>
+          <view class='detailname'>每日领取</view>
+          <view class='detailtime'>2018-05-19 12:58:00</view>
+          <view class='detailnum'>+1</view>
+        </view>
+        <view class='daydetailitem'>
+          <view class='detailname'>每日领取</view>
+          <view class='detailtime'>2018-05-19 12:58:00</view>
+          <view class='detailnum'>+1</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='dayfree'>
+      <block wx:if="{{hasbox}}">
+        <view class='freebox' bindtap='openbox'>
+          <view class='boxback'>待开启</view>
+          <view class='boxdetail'>宝箱每4小时开启一次</view>
+          <view class='boximg'>
+            <image src='../../img/free_ybox.png'></image>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='freeboxgray'>
+          <view class='boxbackgray'>
+            <view class='boxdistance'>距离打开宝箱</view>
+            <view class='distancebox'>
+              <view class='boxdistanceimg'>
+                <image src="../../img/free_clock.png"></image>
+              </view>
+              <view class='boxdistancetime'>3:53:45</view>
+            </view>
+            
+          </view>
+          <view class='boxdetailgray'>宝箱每4小时开启一次</view>
+          <view class='boximggray'>
+            <image src='../../img/free_box.png'></image>
+          </view>
+        </view>
+      </block>   
+      <view class='freetask'>
+        <view class='tasklist'>
+          <view class='taskitem'>
+            <view class='taskname'>每日领取</view>
+            <view class='taskstate'>已领取</view>
+          </view>
+          <view class='taskitem'>
+            <view class='taskname'>每日评论一次 (未完成)</view>
+            <view class='taskstate'>领取</view>
+          </view>
+          <view class='taskitem'>
+            <view class='taskname'>分享视频给好友 (每日上限5个)</view>
+            <view class='taskstate'>3/5</view>
+          </view>
+        </view>
+        <view class='taskvideo'>
+          <view class='tvideotop'>
+            <view class='tvideoname'>观看视频10分钟</view>
+            <view class='tvideostate nostate'>领取</view>
+          </view>
+          <view class='tvideoprocess'>
+            <view class='processcolor'></view>
+            <view class='processing'>3分钟</view>
+            <view class='processed'>完成</view>
+          </view>
+        </view>
+      </view>
+      <view class='freebottom' bindtap='tofeedlist'>
+        <image src='../../img/free_feedback.png'></image>
+      </view>
+    </view>
+  </block>
+  <block wx:if="{{boxopen}}">
+    <view class='openbox'>
+      <view class='openchange'>福利券X1</view>
+      <view class='openimg'>
+        <image src='../../img/free_boxalert.png'></image>
+      </view>
+      <view class='closebtn' bindtap='closebox'>×</view>
+    </view>
+  </block>
+</view>

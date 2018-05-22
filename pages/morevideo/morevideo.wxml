@@ -1,0 +1,36 @@
+<view class="morevideobox">
+  <view class='typeitembox'>
+    <view class='typeitem'>
+      <view class='typeimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+      <view class='vipsign'>VIP</view>
+      <view class='videotime'>12:09</view>
+      <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+    </view>
+    <view class='typeitem'>
+      <view class='typeimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+      <view class='vipsign'>VIP</view>
+      <view class='videotime'>12:09</view>
+      <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+    </view>
+    <view class='typeitem'>
+      <view class='typeimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+      <view class='vipsign'>VIP</view>
+      <view class='videotime'>12:09</view>
+      <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+    </view>
+    <view class='typeitem'>
+      <view class='typeimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+      <view class='vipsign'>VIP</view>
+      <view class='videotime'>12:09</view>
+      <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+    </view>
+  </view>
+</view>
