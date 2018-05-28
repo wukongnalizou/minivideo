@@ -11,17 +11,17 @@
   width: 90%;
   height: 60rpx;
   line-height: 50rpx;
-  display: flex;
+  white-space: nowrap;
   font-size: 30rpx;
   padding: 0 20rpx; 
 }
 .scrollx{
   width: 650rpx;
 }
-.navlist{
+/* .navlist{
   width: 910rpx;
   height: 50rpx;
-}
+} */
 .navbox .nav{
   display: inline-block;
   text-align: center;

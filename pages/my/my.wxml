@@ -1,2 +1,104 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="mybox">
+  <view class='mytop'>
+    <view class='mybackimg'>
+      <image src='../../img/free_back.png'></image>
+    </view>
+    <view class='myimgbox'>
+      <view class='myimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+    </view>
+    <view class='myname'>悟空哪里走</view>
+  </view>
+  <view class='mynavlist'>
+    <view class='mynavitem' bindtap='tovip'>
+      <view class='navimg'>
+        <image src='../../img/my_vip.png'></image>
+      </view>
+      <view class='navtitle'>我的VIP</view>
+      <view class='arrow'>
+        <image src='../../img/my_arrow.png'></image>
+      </view>
+    </view>
+    <block wx:if="{{!hashistory}}">
+      <view class='mynavitem' bindtap='tohistory'>
+        <view class='navimg'>
+          <image src='../../img/my_history.png'></image>
+        </view>
+        <view class='navtitle'>历史记录</view>
+        <view class='arrow'>
+          <image src='../../img/my_arrow.png'></image>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{hashistory}}">
+      <view class='mynavitem historybox'>
+        <view class='historyitem clearfix' bindtap='tohistory'>
+          <view class='navimg'>
+            <image src='../../img/my_history.png'></image>
+          </view>
+          <view class='navtitle'>历史记录</view>
+          <view class='arrow'>
+            <image src='../../img/my_arrow.png'></image>
+          </view>
+        </view>
+        <view class='videolist'>
+          <view class='videoitem'>
+            <view class='videoimg'>
+              <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+            </view>
+            <view class='videoname'>视频巴拉巴拉巴拉</view>
+          </view>
+          <view class='videoitem'>
+            <view class='videoimg'>
+              <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+            </view>
+            <view class='videoname'>视频</view>
+          </view>
+          <view class='videoitem'>
+            <view class='videoimg'>
+              <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+            </view>
+            <view class='videoname'>视频</view>
+          </view>
+        </view>  
+      </view>
+    </block>
+    <view class='mynavitem' bindtap='tocollection'>
+      <view class='navimg'>
+        <image src='../../img/my_collection.png'></image>
+      </view>
+      <view class='navtitle'>我的收藏</view>
+      <view class='arrow'>
+        <image src='../../img/my_arrow.png'></image>
+      </view>
+    </view>
+    <view class='mynavitem' bindtap='toconcern'>
+      <view class='navimg'>
+        <image src='../../img/my_concern.png'></image>
+      </view>
+      <view class='navtitle'>我的关注</view>
+      <view class='arrow'>
+        <image src='../../img/my_arrow.png'></image>
+      </view>
+    </view>
+    <view class='mynavitem' bindtap='todiscuss'>
+      <view class='navimg'>
+        <image src='../../img/my_discuss.png'></image>
+      </view>
+      <view class='navtitle'>我的消息</view>
+      <view class='arrow'>
+        <image src='../../img/my_arrow.png'></image>
+      </view>
+    </view>
+    <view class='mynavitem' bindtap='toservice'>
+      <view class='navimg'>
+        <image src='../../img/my_service.png'></image>
+      </view>
+      <view class='navtitle'>联系客服</view>
+      <view class='arrow'>
+        <image src='../../img/my_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

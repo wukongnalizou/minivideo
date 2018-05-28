@@ -1,1 +1,47 @@
-/* pages/feedback/feedback.wxss */
+.feeditem{
+  padding: 26rpx 26rpx 0 26rpx;
+}
+.feedname{
+  font-size: 28rpx;
+}
+.feedcon{
+  width: 698rpx;
+  /* height: 79rpx; */
+  margin-top: 23rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #999;
+}
+.feedcon input{
+  width: 658rpx;
+  height: 39rpx;
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+.feedcon textarea{
+  width: 658rpx;
+  height: 307rpx;
+  padding: 20rpx;
+  font-size: 24rpx;
+}
+.placeholderstyle{
+  font-size: 24rpx;
+  color: #d0d0d0;
+}
+.feedbtn{
+  width: 698rpx;
+  height: 79rpx;
+  line-height: 79rpx;
+  margin: 0 auto;
+  margin-top: 27rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  background: #ffd600;
+}
+.feedintro{
+  margin-top: 29rpx;
+  margin-left: 26rpx;
+  line-height: 1.5;
+  font-size: 18rpx;
+}

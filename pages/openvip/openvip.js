@@ -1,14 +1,21 @@
-// pages/feedback/feedback.js
+// pages/openvip/openvip.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    contact:'',
-    content:''
+    currentTab: 1
   },
-
+  switchNav: function (e) {
+    if (this.data.currentTab === e.currentTarget.dataset.current) {
+      return false;
+    } else {
+      this.setData({
+        currentTab: e.currentTarget.dataset.current
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

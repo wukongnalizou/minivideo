@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    recommend:true,
+    recommend:false,
     currentTab: 0,
     dialog:false,
     dialogtext:'是否删除全部历史记录?'

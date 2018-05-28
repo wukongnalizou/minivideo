@@ -1,2 +1,21 @@
-<!--pages/feedback/feedback.wxml-->
-<text>pages/feedback/feedback.wxml</text>
+<view class="feedbackbox">
+  <view class='feedbackwrapper'>
+    <view class='feeditem'>
+      <view class='feedname'>QQ, 邮件或电话</view>
+      <view class='feedcon'>
+        <input bindinput="concat" placeholder="选填" placeholder-class="placeholderstyle"></input>
+      </view>
+    </view>
+    <view class='feeditem'>
+      <view class='feedname'>意见反馈</view>
+      <view class='feedcon'>
+        <textarea bindinput="content" placeholder="想要新功能？使用体验不好？在这里吐槽吧!(必填)" placeholder-class="placeholderstyle"></textarea>
+      </view>
+    </view>
+    <view class='feedbtn'>提交</view>
+    <view class='feedintro'>
+      <view class='info'>如果您在使用时出现急需解决的问题</view>
+      <view class='info'>也可以直接联系客服QQ: 88898798</view>
+    </view>
+  </view>
+</view>

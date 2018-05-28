@@ -1,0 +1,183 @@
+.top{
+  width: 750rpx;
+  height: 61rpx;
+  line-height: 61rpx;
+  font-size: 30rpx;
+  border-bottom:15rpx solid #f0f0f0;  
+}
+.edit{
+  float: right;
+  margin-right: 20rpx;
+  color: #999;
+}
+.navbox{
+  width: 90%;
+  height: 60rpx;
+  margin-top: 20rpx;
+  line-height: 50rpx;
+  display: flex;
+  font-size: 30rpx;
+  padding: 0 20rpx; 
+}
+.scrollx{
+  width: 650rpx;
+}
+.navlist{
+  width: 710rpx;
+  height: 50rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+}
+.navbox .nav{
+  display: inline-block;
+  text-align: center;
+  /* width: 130rpx; */
+}
+.navbox .nav:last-child{
+  margin-left: 60rpx;
+}
+.navlist .on{
+  font-weight: 700;
+}
+.navlist .on::after{
+  content: '';
+  display: block;
+  width: 37rpx;
+  height: 5rpx;
+  background:#ffd600;
+  margin: 0 auto; 
+}
+.discusslist{
+  width: 710rpx;
+  margin: 0 auto;
+}
+.discussitem{
+  margin-top: 28rpx;
+}
+.discussimg{
+  float: left;
+  width: 72rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+.discussimg image{
+  display: inline-block;
+  width: 65rpx;
+  height: 65rpx;
+  transform: translateY(4rpx);
+  border-radius: 50%;
+}
+.discussright{
+  float: left;
+  width: 618rpx;
+  margin-left: 20rpx;
+}
+.discusstop{
+  margin: 24rpx 0;
+}
+.name{
+  float: left;
+  font-size: 26rpx;
+  color: #999;
+}
+.time{
+  float: right;
+  font-size: 20rpx;
+  color: #999;
+}
+.text{
+  margin-bottom: 23rpx;
+  font-size: 24rpx;
+}
+.answer{
+  color: #999;
+}
+.video{
+  position: relative;
+  border-top: 1rpx solid #e8e8e8;
+  border-bottom: 1rpx solid #e8e8e8;
+  padding: 23rpx 0;
+}
+.videoimg{
+  float: left;
+  width: 235rpx;
+  height: 144rpx;
+  border-radius: 10rpx;
+}
+.videoimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.videodetail{
+  float: left;
+  width: 354rpx;
+  margin-left: 19rpx;
+}
+.title{
+  display: -webkit-box;
+  font-size: 24rpx;
+  color: #999;
+  /* width: 354rpx; */
+  /* height: 64rpx; */
+  word-break: break-all;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.intro{
+  font-size: 0;
+  margin-top: 10rpx;
+}
+.videoplay{
+  font-size: 20rpx;
+  color: #999;
+}
+.videotime{
+  margin-left: 20rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+.videoname{
+  position: absolute;
+  bottom: 20rpx;
+  font-size: 22rpx;
+  color: #999;
+}
+.btngroup{
+  float: left;
+  width: 100%;
+  height: 75rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  line-height: 75rpx;
+  font-size: 24rpx;
+}
+.seebtn{
+  margin-left: 449rpx;
+  padding: 0 20rpx;
+  display: inline-block;
+}
+.answerbtn{
+  margin-left: 40rpx;
+  padding: 0 20rpx;
+  display: inline-block;
+}
+.nodatatitle{
+  margin-top: 200rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #999;
+}
+.nodataimg{
+  width: 354rpx;
+  height: 354rpx;
+  margin: 0 auto;
+}
+.nodataimg image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,14 +1,24 @@
-// pages/feedback/feedback.js
+// pages/mydiscuss/mydiscuss.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    contact:'',
-    content:''
+    navTab: 0,
+    mynodata:false,
+    othernodata: false
   },
-
+  switchNavtab: function (e) {
+    // console.log(e)
+    if (this.data.navTab === e.target.dataset.navtab) {
+      return false;
+    } else {
+      this.setData({
+        navTab: e.target.dataset.navtab
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

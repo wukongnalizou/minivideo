@@ -13,7 +13,13 @@
     "pages/user/user",
     "pages/changevip/changevip",
     "pages/feedlist/feedlist",
-    "pages/feedback/feedback"
+    "pages/feedback/feedback",
+    "pages/myhistory/myhistory",
+    "pages/myvip/myvip",
+    "pages/mycollection/mycollection",
+    "pages/myconcern/myconcern",
+    "pages/mydiscuss/mydiscuss",
+    "pages/openvip/openvip"
   ],
   "window":{
     "backgroundTextStyle":"light",

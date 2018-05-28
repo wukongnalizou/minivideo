@@ -5,14 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    hashistory:true
   },
-
+  tohistory:function(){
+    wx.navigateTo({
+      url: '../myhistory/myhistory'
+    })
+  },
+  tovip: function () {
+    wx.navigateTo({
+      url: '../myvip/myvip'
+    })
+  },
+  tocollection: function () {
+    wx.navigateTo({
+      url: '../mycollection/mycollection'
+    })
+  },
+  toconcern: function () {
+    wx.navigateTo({
+      url: '../myconcern/myconcern'
+    })
+  },
+  todiscuss: function () {
+    wx.navigateTo({
+      url: '../mydiscuss/mydiscuss'
+    })
+  },
+  // toservice: function () {
+  //   wx.navigateTo({
+  //     url: '../myser/myhistory'
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    // wx.showToast({
+    //   title: '加载中',
+    //   icon:'loading',
+    //   mask:true
+    // })
   },
 
   /**

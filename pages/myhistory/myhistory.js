@@ -1,14 +1,24 @@
-// pages/feedback/feedback.js
+// pages/myhistory/myhistory.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    contact:'',
-    content:''
+    edit:false,
+    arrow:false,
+    nodata:false
   },
-
+  toggleedit:function(){
+    this.setData({
+      edit: !this.data.edit
+    })
+  },
+  togglearrow:function(){
+    this.setData({
+      arrow: !this.data.arrow
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

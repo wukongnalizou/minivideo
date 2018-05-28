@@ -1,3 +1,17 @@
 <view class="feedlistbox">
-  
+  <view class='feedlist'>
+    <view class='feeditem clearfix'>
+      <view class='feedimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+      <view class='feedcon'>若您有任何问题或建议，记得反馈给我哦，我们会认真阅读每一条反馈！如果反馈被采取，系统将送给您大量的福利券。</view>
+    </view>
+    <view class='feeditem self clearfix'>
+      <view class='feedimg'>
+        <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>
+      <view class='feedcon'>如果反馈被采取，系统将送给您大量的福利券。</view>
+    </view>
+  </view>
+  <view class='tofeedback' bindtap='tofeedback'>写</view>
 </view>

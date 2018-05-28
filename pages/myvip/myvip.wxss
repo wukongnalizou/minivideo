@@ -1,0 +1,138 @@
+.vipbox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+}
+.vipback{
+  position: relative;
+  /* overflow: hidden; */
+  width: 684rpx;
+  height: 370rpx;
+  margin: 0 auto;
+  margin-top: 99rpx;
+  border-radius: 10rpx;
+  background: -webkit-gradient(linear,left top,right bottom, from(rgba(170, 170, 170, 1)), to(rgba(240, 240, 240, 1)));
+  box-shadow:5rpx 13rpx 10rpx rgba(0,0,0,0.56); 
+}
+.vipgoldbox{
+  background: -webkit-gradient(linear,left top,right bottom, from(rgba(198, 146, 64, 1)), to(rgba(237, 210, 110, 1)));
+}
+.viptitle{
+  padding-top: 25rpx;
+  margin-left: 22rpx;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.vipbackimg{
+  position: absolute;
+  width: 680rpx;
+  height: 106rpx;
+  z-index: 0;
+}
+.vipbackimg image{
+  width: 100%;
+  height: 106rpx;
+}
+.vipimgbox{
+  position: absolute;
+  z-index: 3;
+  top: -44rpx;
+  right: 278rpx;
+  width: 125rpx;
+  height: 125rpx;
+  text-align: center;
+  background: #f0f0f0;
+  border-radius: 50%;
+}
+.vipimg{
+  transform: translateY(8rpx);
+  display: inline-block;
+  width: 113rpx;
+  height: 113rpx;
+  border-radius: 50%;
+}
+.vipimg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.vipcrown{
+  position: absolute;
+  top: -30rpx;
+  right: -10rpx;
+  width: 63rpx;
+  height: 63rpx;
+}
+.vipcrown image{
+  width: 100%;
+  height: 100%;
+}
+.vipname{
+  margin-top: 50rpx;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.vipintro{
+  margin-top: 20rpx;
+  font-size: 22rpx;
+  text-align: center;
+}
+.btngroup{
+  margin-top: 74rpx;
+  padding-left: 58rpx;
+}
+.btn{
+  display: inline-block;
+  width: 188rpx;
+  height: 52rpx;
+  margin-left: 62rpx;
+  line-height: 52rpx;
+  text-align: center;
+  background: #ebd388;
+  border-radius: 26rpx;
+  box-shadow:0rpx 0rpx 10rpx rgba(0,0,0,0.1);
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.vipdetail{
+
+}
+.viphead{
+  margin-top: 60rpx;
+  font-size: 36rpx;
+  color: #ebd388;
+  font-weight:600;
+  text-align: center;
+}
+.viplist{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.vipitem{
+  display: inline-block;
+  margin-top: 60rpx;
+  width: 250rpx; 
+  /* flex: 1; */
+}
+.vipitem:nth-child(4){
+  margin-left: 125rpx;
+}
+.itemimg{
+  width: 128rpx;
+  height: 128rpx;
+  margin:0 auto;
+  border-radius: 50%;
+}
+.itemimg image{
+  width: 100%;
+  height: 100%;
+}
+.itemname{
+  text-align: center;
+  font-size: 24rpx;
+  color: #ebd388;
+}

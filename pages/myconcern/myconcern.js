@@ -1,12 +1,11 @@
-// pages/feedback/feedback.js
+// pages/myconcern/myconcern.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    contact:'',
-    content:''
+    nodata: false
   },
 
   /**

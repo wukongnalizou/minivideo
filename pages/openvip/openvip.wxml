@@ -1,0 +1,41 @@
+<view class="openvipbox">
+  <view class='top'>
+    <view class='imgbox'>
+      <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+    </view>
+    <view class='right clearfix'>
+      <view class='name'>刚强大魔王</view>
+      <view class='detail'>您的vip会员将于 2018-06-18 到期</view>
+    </view>
+  </view>
+  <view class='viptitle'>VIP会员</view>
+  <view class='viplist'>
+    <view class="vipitem {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap='switchNav'>
+      <view class='title'>年度VIP会员</view>
+      <view class='money'>￥198</view>
+    </view>
+    <view class="vipitem {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap='switchNav'>
+      <view class='title'>半年VIP会员</view>
+      <view class='money'>￥100</view>
+    </view>
+  </view>
+  <view class='viplist'>
+    <view class="vipsubitem {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap='switchNav'>
+      <view class='title'>季度VIP会员</view>
+      <view class='money'>￥50</view>
+    </view>
+    <view class="vipsubitem {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap='switchNav'>
+      <view class='title'>月VIP会员</view>
+      <view class='money'>￥20</view>
+    </view>
+    <view class="vipsubitem {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap='switchNav'>
+      <view class='title'>1日VIP体验卡</view>
+      <view class='money'>￥1</view>
+    </view>
+  </view>
+  <view class='vipbtn'>立即支付 (100元)</view>
+  <view class='vipinto'>
+    <text>如开通会员即表示您同意</text>
+    <text>《VIP会员协议》</text>
+  </view>
+</view>

@@ -1,0 +1,111 @@
+.top{
+  width: 750rpx;
+  height: 210rpx;
+  background: linear-gradient(to right, #C69240 , #EDD26E);
+}
+.imgbox{
+  width: 141rpx;
+  height: 141rpx;
+  margin-top: 33rpx;
+  margin-left: 33rpx;
+  float: left;
+  border-radius: 50%;
+  text-align: center;
+  background: #f0f0f0;
+}
+.imgbox image{
+  display: inline-block;
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  transform: translateY(7rpx);
+}
+.right{
+  float: left;
+  margin-left: 10rpx;
+}
+.name{
+  color: #fff;
+  margin-top: 64rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.detail{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.viptitle{
+  width: 710rpx;
+  height: 75rpx;
+  margin: 0 auto;
+  line-height: 75rpx;
+  font-size:36rpx;
+  font-weight: 700;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.viplist{
+  text-align: center;
+  margin-top: 22rpx;
+}
+.vipitem{
+  display: inline-block;
+  width: 334rpx;
+  height: 211rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #EDD26E;
+}
+.on{
+  background: linear-gradient(to right, #E2C061 , #F0DA8B);
+}
+.on .title,.on .money{
+  color: #6a4700;
+}
+.vipitem:nth-child(2n){
+  margin-left: 22rpx;
+}
+.vipsubitem{
+  display: inline-block;
+  width: 215rpx;
+  height: 211rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #EDD26E;
+}
+/* .vipsubitem:first-child{
+  margin-left: 30rpx;
+} */
+ .vipsubitem:not(:first-child){
+  margin-left: 22rpx;
+} 
+.title{
+  margin-top: 27rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #c69240;
+}
+.money{
+  font-size: 60rpx;
+  color: #c69240;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.vipbtn{
+  width: 690rpx;
+  height: 79rpx;
+  margin: 0 auto;
+  margin-top: 145rpx;
+  border-radius: 40rpx;
+  background: linear-gradient(to right, #E2C061 , #F0DA8B);
+  line-height: 79rpx;
+  text-align: center;
+  color: #6a4700;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.vipinto{
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+}

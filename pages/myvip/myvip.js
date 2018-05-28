@@ -1,14 +1,17 @@
-// pages/feedback/feedback.js
+// pages/myvip/myvip.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    contact:'',
-    content:''
+    vip:false
   },
-
+  toopenvip: e => {
+    wx.navigateTo({
+      url: '../openvip/openvip',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

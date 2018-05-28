@@ -1,17 +1,11 @@
 <view class='indexbox'>
   <view class='topbox'>
     <view class='navbox'>
-      <scroll-view scroll-x="true" scroll-with-animation="true">
-        <view class='scrollx'>
-          <view class='navlist'>
-            <view class="nav {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap='switchNav'>精选</view>
-            <view class="nav {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap='switchNav'>搞笑</view>
-            <view class="nav {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap='switchNav'>正能量</view>
-            <view class="nav {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap='switchNav'>情感</view>
-            <view class="nav {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap='switchNav'>科技</view>
-            <view class="nav {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap='switchNav'>科技</view>
-            <view class="nav {{currentTab==6 ? 'on' : ''}}" data-current="6" bindtap='switchNav'>科技</view>
-          </view>
+      <scroll-view class='scrollx' scroll-x="true" scroll-with-animation="true">
+        <view class='navlist'>
+          <block wx:for="{{nav}}" wx:key="{{item.id}}">
+            <view class="nav {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap='switchNav'>{{item.title}}</view>
+          </block>
         </view>
       </scroll-view> 
       <view class='more'>
@@ -22,9 +16,9 @@
   <block wx:if="{{currentTab == 0}}"> 
     <view class='swiperbox'>
       <swiper indicator-dots="false" autoplay="true" interval="5000" duration="1000" indicator-active-color="#FFD600" circular="true">
-        <block wx:for="{{banners}}" wx:key="banner">
+        <block wx:for="{{banner}}" wx:key="banner">
           <swiper-item>
-            <image src="{{item}}" class="slide-image"/>
+            <image src="{{item.pic}}" class="slide-image"/>
           </swiper-item>
         </block>
       </swiper>
@@ -90,9 +84,9 @@
         <text class='refreshtext'>换一批试试</text>
       </view>
     </view>
-    <view class='typelist'>
+    <view class='typelist'  wx:for="{{modules}}" data-id="{{item.id}}" wx:key="{{item.id}}">
       <view class='typetop'>
-        <view class='typetitle'>热播</view>
+        <view class='typetitle'>{{item.title}}</view>
         <view class='typeset' bindtap='toggleset'>
           <image src='../../img/index_set.png'></image>
         </view>
@@ -101,40 +95,16 @@
           <view class='setitem' bindtap='nofunny'>不感兴趣</view>
         </view>
         <view class='columnline'></view>
-        <view class='typemore'>更多></view>
+        <view class='typemore' bindtap='tomore' data-id="{{item.id}}">更多></view>
       </view>
       <view class='typeitembox'>
-        <view class='typeitem'>
+        <view class='typeitem' wx:for="{{item.videos}}" wx:for-item="child" data-id="{{child.id}}" wx:key="{{child.id}}">
           <view class='typeimg'>
-            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+            <image src='{{child.pic}}'></image>
           </view>
-          <view class='vipsign'>VIP</view>
-          <view class='videotime'>12:09</view>
-          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
-        </view>
-        <view class='typeitem'>
-          <view class='typeimg'>
-            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
-          </view>
-          <view class='vipsign'>VIP</view>
-          <view class='videotime'>12:09</view>
-          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
-        </view>
-        <view class='typeitem'>
-          <view class='typeimg'>
-            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
-          </view>
-          <view class='vipsign'>VIP</view>
-          <view class='videotime'>12:09</view>
-          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
-        </view>
-        <view class='typeitem'>
-          <view class='typeimg'>
-            <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
-          </view>
-          <view class='vipsign'>VIP</view>
-          <view class='videotime'>12:09</view>
-          <view class='typeitemtitle'>山东大汉，好汉中的王者</view>
+          <view class='vipsign' wx:if="{{child.vip}}">VIP</view>
+          <view class='videotime'>{{child.duration}}</view>
+          <view class='typeitemtitle'>{{child.title}}</view>
         </view>
       </view>
       <view class='typeline'></view>

@@ -1,0 +1,81 @@
+<view class="vipbox">
+  <block wx:if="{{!vip}}">
+    <view class='vipback'>
+      <view class='viptitle'>VIP至尊卡</view>
+      <view class='vipimgbox'>
+        <view class='vipimg'>
+          <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+        </view>
+        <view class='vipcrown'>
+          <image src='../../img/crown_silver.png'></image>
+        </view>
+      </view>
+      <view class='vipbackimg'>
+        <image src='../../img/vip_backsilver.png'></image>
+      </view>
+      <view class='vipname'>悟空哪里走</view>
+      <view class='vipintro'>你还不是VIP会员，你可以通过以下方式升级为VIP会员</view>
+      <view class='btngroup'>
+        <view class='btn'>做任务换VIP</view>
+        <view class='btn' bindtap='toopenvip'>充值</view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='vipback vipgoldbox'>
+      <view class='viptitle'>VIP至尊卡</view>
+      <view class='vipimgbox'>
+        <view class='vipimg'>
+          <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+        </view>
+        <view class='vipcrown'>
+          <image src='../../img/crown_gold.png'></image>
+        </view>
+      </view>
+      <view class='vipbackimg'>
+        <image src='../../img/vip_backgold.png'></image>
+      </view>
+      <view class='vipname'>悟空哪里走1</view>
+      <view class='vipintro'>您的vip会员将于 2018-06-18 到期</view>
+      <view class='btngroup'>
+        <view class='btn'>做任务换VIP</view>
+        <view class='btn'>充值</view>
+      </view>
+    </view>
+  </block>
+  <view class='vipdetail'>
+    <view class='viphead'>—— 会员权益 ——</view>
+    <view class='viplist'>
+      <view class='vipitem'>
+        <view class='itemimg'>
+          <image src='../../img/freevideo.png'></image>
+        </view>
+        <view class='itemname'>免费大片</view>
+      </view>
+      <view class='vipitem'>
+        <view class='itemimg'>
+          <image src='../../img/vipsign.png'></image>
+        </view>
+        <view class='itemname'>至尊标识</view>
+      </view>
+      <view class='vipitem'>
+        <view class='itemimg'>
+          <image src='../../img/uniservice.png'></image>
+        </view>
+        <view class='itemname'>专属客服</view>
+      </view>
+      <view class='vipitem'>
+        <view class='itemimg'>
+          <image src='../../img/firstsee.png'></image>
+        </view>
+        <view class='itemname'>抢先看剧</view>
+      </view>
+      <view class='vipitem'>
+        <view class='itemimg'>
+          <image src='../../img/other.png'></image>
+        </view>
+        <view class='itemname'>其他权益，敬请期待</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,157 @@
+<view class="discussbox">
+  <block>
+    <view class='top clearfix'>
+      <view class='edit' bindtap='toggleedit'>清空</view>
+    </view>
+    <view class='navbox'>
+      <!-- <scroll-view scroll-x="true" scroll-with-animation="true"> -->
+        <view class='scrollx'>
+          <view class='navlist'>
+            <view class="nav {{navTab==0 ? 'on' : ''}}" data-navtab="0" bindtap='switchNavtab'>我发表的评论</view>
+            <view class="nav {{navTab==1 ? 'on' : ''}}" data-navtab="1" bindtap='switchNavtab'>别人回复的评论</view>
+          </view>
+        </view>
+      <!-- </scroll-view>  -->
+    </view>
+    <view class='discusscon'>
+    <block wx:if="{{navTab == 0}}">
+      <block wx:if="{{!mynodata}}">
+        <view class='discusslist'>
+          <view class='discussitem clearfix'>
+            <view class='discussimg'>
+              <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='discussright'>
+              <view class='discusstop clearfix'>
+                <view class='name'>像个孩子</view>
+                <view class='time'>2018-05-12 12:34:59</view>
+              </view>
+              <view class='text'>简明扼要的介绍，是当事人全面而间接。</view>
+              <view class='video clearfix'>
+                <view class='videoimg'>
+                  <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+                </view>
+                <view class='videodetail'>
+                  <view class='title'>苏军战略要地被围900天淡金粮绝苏军战略要地被围900天淡金粮绝要地被围900天淡金粮</view>
+                  <view class='intro'>
+                    <text class='videoplay'>233次观看</text>
+                    <text class='videotime'>3小时前</text>
+                  </view>
+                  <view class='videoname'>像个孩子一样</view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='discussitem clearfix'>
+            <view class='discussimg'>
+              <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='discussright'>
+              <view class='discusstop clearfix'>
+                <view class='name'>像个孩子</view>
+                <view class='time'>2018-05-12 12:34:59</view>
+              </view>
+              <view class='text'>简明扼要的介绍，是当事人全面而间接。</view>
+              <view class='video clearfix'>
+                <view class='videoimg'>
+                  <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+                </view>
+                <view class='videodetail'>
+                  <view class='title'>苏军战略要地被围900天淡金</view>
+                  <view class='intro'>
+                    <text class='videoplay'>233次观看</text>
+                    <text class='videotime'>3小时前</text>
+                  </view>
+                  <view class='videoname'>像个孩子一样</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='nodatatitle'>~~你还没发表任何评论哦~~</view>
+        <view class='nodataimg'>
+          <image src='../../img/nodata.png'></image>
+        </view>
+      </block>  
+    </block>
+    <block wx:if="{{navTab == 1}}">
+      <block wx:if="{{!othernodata}}">
+        <view class='discusslist'>
+          <view class='discussitem clearfix'>
+            <view class='discussimg'>
+              <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='discussright clearfix'>
+              <view class='discusstop clearfix'>
+                <view class='name'>像个孩子</view>
+                <view class='time'>2018-05-12 12:34:59</view>
+              </view>
+              <view class='text'>
+                <text class='answer'>回复了你： </text>
+                <text>简明扼要的介绍，是当事人全面而间接是当事人全面而间接。</text>
+              </view>
+              <view class='video clearfix'>
+                <view class='videoimg'>
+                  <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+                </view>
+                <view class='videodetail'>
+                  <view class='title'>苏军战略要地被围900天淡金粮绝苏军战略要地被围900天淡金粮绝要地被围900天淡金粮</view>
+                  <view class='intro'>
+                    <text class='videoplay'>233次观看</text>
+                    <text class='videotime'>3小时前</text>
+                  </view>
+                  <view class='videoname'>像个孩子一样</view>
+                </view>
+              </view>
+            </view>
+            <view class='btngroup'>
+              <view class='seebtn'>查看</view>
+              <view class='answerbtn'>回复</view>
+            </view>
+          </view>
+          <view class='discussitem clearfix'>
+            <view class='discussimg'>
+              <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='discussright'>
+              <view class='discusstop clearfix'>
+                <view class='name'>像个孩子</view>
+                <view class='time'>2018-05-12 12:34:59</view>
+              </view>
+              <view class='text'>
+                <text class='answer'>回复了你： </text>
+                <text>简明扼要的介绍，是当事人全面而间接。</text>
+              </view>
+              <view class='video clearfix'>
+                <view class='videoimg'>
+                  <image src='http://img5.imgtn.bdimg.com/it/u=3468481793,3455309356&fm=27&gp=0.jpg'></image>
+                </view>
+                <view class='videodetail'>
+                  <view class='title'>苏军战略要地被围900天淡金</view>
+                  <view class='intro'>
+                    <text class='videoplay'>233次观看</text>
+                    <text class='videotime'>3小时前</text>
+                  </view>
+                  <view class='videoname'>像个孩子一样</view>
+                </view>
+              </view>
+            </view>
+            <view class='btngroup'>
+              <view class='seebtn'>查看</view>
+              <view class='answerbtn'>回复</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='nodatatitle'>~~暂无人回复, 去发表更多的评论吧~~</view>
+        <view class='nodataimg'>
+          <image src='../../img/nodata.png'></image>
+        </view>
+      </block>  
+    </block>  
+    </view>
+  </block>
+</view>
